@@ -14,7 +14,7 @@ export default function Header() {
         <div className='fild-guide'>
           <ul className='guide'>
             <li><Link to='/'>Home</Link></li>
-            <li><Link to='/portifolio'>Portfólio</Link></li>
+            <li><Link to='/portifoliologo'>Portfólio</Link></li>
             <li><Link to='/contato'>Contato</Link></li>
           </ul>
         </div>

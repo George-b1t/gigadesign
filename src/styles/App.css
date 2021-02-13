@@ -22,7 +22,7 @@ body {
   width: 100%;
   height: 100vh;
 
-  position: absolute;
+  position: fixed;
 
   overflow: hidden;
 
@@ -277,7 +277,7 @@ body {
 
   cursor: pointer;
 
-  transition: .3s;
+  transition: .3s ease;
 
   transform: skewX(-10deg);
 }
@@ -336,6 +336,361 @@ body {
   width: 101%;
 }
 
+.portifolio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.portifolio-container .field-portifolio-card {
+  margin: 39px auto 61px auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portifolio-container .field-portifolio-card .title-portifolio {
+  color: #FFF001;
+
+  font-size: 50px;
+  text-transform: uppercase;
+
+  font-weight: 500;
+}
+
+.portifolio-container .field-portifolio-select {
+  width: 419px;
+
+  margin-top: 39px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.portifolio-container .portifoliologo-button-logo {
+  width: 186px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #FFF001;
+
+  border-radius: 5px;
+
+  color: #030700;
+
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.portifolio-container .portifoliocamisa-button-logo {
+  width: 186px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+
+  border: 2px solid #FFF001;
+  border-radius: 5px;
+
+  color: #FFFFFF;
+
+  position: relative;
+
+  transition: .5s ease;
+
+  font-size: 18px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.portifolio-container .portifoliocamisa-button-logo:hover {
+  color: #959698;
+}
+
+.portifolio-container .portifoliocamisa-button-logo::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+
+  border-radius: 5px;
+
+  z-index: -1;
+
+  width: 0%;
+  height: 105%;
+  transition: .5s ease;
+
+  background: linear-gradient(225deg, #FFF001 0%, #E5D801 100%);
+}
+
+.portifolio-container .portifoliocamisa-button-logo:hover::after {
+  width: 101%;
+}
+
+.portifolio-container .portifoliologo-button-camisa {
+  width: 186px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+
+  border: 2px solid #FFF001;
+  border-radius: 5px;
+
+  color: #FFFFFF;
+
+  position: relative;
+
+  transition: .5s ease;
+
+  font-size: 18px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.portifolio-container .portifoliocamisa-button-camisa {
+  width: 186px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #FFF001;
+
+  border-radius: 5px;
+
+  color: #030700;
+
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.portifolio-container .portifoliologo-button-camisa:hover {
+  color: #959698;
+}
+
+.portifolio-container .portifoliologo-button-camisa::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+
+  border-radius: 5px;
+
+  z-index: -1;
+
+  width: 0%;
+  height: 105%;
+  transition: .5s ease;
+
+  background: linear-gradient(225deg, #FFF001 0%, #E5D801 100%);
+}
+
+.portifolio-container .portifoliologo-button-camisa:hover::after {
+  width: 101%;
+}
+
+.portifolio-container .field-images-content {
+  width: 926px; 
+
+  margin: 0 auto; 
+
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between;
+}
+
+.portifolio-container .field-images-content img {
+  width: 300px;
+
+  margin-bottom: 10px;
+  filter: grayscale(0);
+
+  transition: .4s ease;
+}
+
+.portifolio-container .field-images-content img:hover{
+  filter: grayscale(20%);
+
+  transform: scale(1.02);
+}
+
+.portifolio-container .field-images-content .hover-image {
+  vertical-align: middle;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.field-see-more-portifolio {
+  margin: 40px auto 70px auto;
+}
+
+.field-see-more-portifolio a {
+  width: 220px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+
+  border: 2px solid #FFF001;
+  border-radius: 5px;
+
+  color: #FFFFFF;
+
+  position: relative;
+
+  transition: .5s ease;
+
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  z-index: 1;
+}
+
+.field-see-more-portifolio a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+
+  border-radius: 5px;
+
+  z-index: -1;
+
+  width: 0%;
+  height: 105%;
+  transition: .5s ease;
+
+  background: linear-gradient(225deg, #FFF001 0%, #E5D801 100%);
+}
+
+.field-see-more-portifolio a:hover {
+  color: #959698;
+}
+
+.field-see-more-portifolio a:hover::after {
+  width: 101%;
+}
+
+.logo-page-container {
+  width: 100%;
+  height: 80vh;
+}
+
+.logo-page-container .logo-page-field-content {
+  padding: 30px;
+}
+
+.logo-page-container .logo-page-field-image {
+  width: 540px;
+
+  margin: 0 auto;
+}
+
+.logo-page-container .logo-page-field-image img {
+  width: 540px;
+}
+
+.logo-page-field-buttons {
+  width: 475px;
+
+  display: flex;
+  justify-content: space-between;
+  
+  margin: 64px auto 20px auto;
+}
+
+.logo-page-field-buttons .logo-page-button-back {
+  width: 220px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+  
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  transition: .4s ease;
+
+  background-color: #FFF001;
+  color: #030700;
+}
+
+.logo-page-field-buttons .logo-page-button-back:hover {
+  background-color: #E5D801;
+
+  transform: scale(1.03);
+}
+
+.logo-page-field-buttons .logo-page-button-instagram {
+  width: 220px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+  border: 2px solid #FFF001;
+
+  position: relative;
+
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.logo-page-field-buttons .logo-page-button-instagram::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+
+  border-radius: 5px;
+
+  z-index: -1;
+
+  width: 0%;
+  height: 105%;
+  transition: .5s ease;
+
+  background: linear-gradient(225deg, #FFF001 0%, #E5D801 100%);
+}
+
+.logo-page-field-buttons .logo-page-button-instagram:hover::after {
+  width: 101%;
+}
+
 @media (max-width: 1400px) {
   .field-image-background img {
     width: 580px;
@@ -361,6 +716,38 @@ body {
   .home-container .field-home-buttons a {
     width: 240px;
     height: 50px;
+    font-size: 14px;
+  }
+  .logo-page-container {
+    width: 100%;
+    height: 74vh;
+  }
+  .logo-page-container .logo-page-field-content {
+    padding: 0px;
+  }
+  .logo-page-container .logo-page-field-image {
+    width: 380px;
+  
+    margin: 0 auto;
+  }
+  .logo-page-container .logo-page-field-image img {
+    width: 380px;
+  }
+  .logo-page-field-buttons {
+    width: 360px;
+    
+    margin: 30px auto 0px auto;
+  }
+  .logo-page-field-buttons .logo-page-button-back {
+    width: 165px;
+    height: 56px;
+
+    font-size: 14px;
+  }
+  .logo-page-field-buttons .logo-page-button-instagram {
+    width: 165px;
+    height: 56px;
+
     font-size: 14px;
   }
 }
@@ -392,6 +779,43 @@ body {
   .home-container .field-home-buttons a {
     width: 210px;
     height: 44px;
+    font-size: 12px;
+  }
+  .portifolio-container .field-images-content {
+    width: 590px;
+  }
+  .portifolio-container .field-images-content img {
+    width: 280px;
+    margin-bottom: 27px;
+  }
+  .logo-page-container .logo-page-field-content {
+    padding-bottom: 50px;
+  }
+  .logo-page-container .logo-page-field-image {
+    width: 340px;
+  
+    margin: 0 auto;
+  }
+  .logo-page-container .logo-page-field-image img {
+    width: 340px;
+
+    margin: 30px 0 0 0;
+  }
+  .logo-page-field-buttons {
+    width: 320px;
+    
+    margin: 30px auto 0 auto;
+  }
+  .logo-page-field-buttons .logo-page-button-back {
+    width: 150px;
+    height: 56px;
+
+    font-size: 12px;
+  }
+  .logo-page-field-buttons .logo-page-button-instagram {
+    width: 150px;
+    height: 56px;
+
     font-size: 12px;
   }
 }
@@ -441,6 +865,13 @@ body {
     width: 450px;
     height: 146.01px;
   }
+  .portifolio-container .field-images-content {
+    width: 500px;
+  }
+  .portifolio-container .field-images-content img {
+    width: 240px;
+    margin-bottom: 17px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -471,6 +902,38 @@ body {
   .home-container .field-home-buttons a {
     width: 300px;
   }
+  .portifolio-container .field-portifolio-card {
+    margin: 29px auto 50px auto;
+  }
+  .portifolio-container .field-portifolio-card .title-portifolio {
+    font-size: 42px;
+  }
+  .portifolio-container .field-portifolio-select {
+    width: 380px;
+    margin-top: 32px;
+  }
+  .portifolio-container .portifoliocamisa-button-logo {
+    width: 160px;
+  }
+  .portifolio-container .portifoliocamisa-button-camisa {
+    width: 160px;
+  }
+  .portifolio-container .portifoliologo-button-logo {
+    width: 160px;
+  }
+  .portifolio-container .portifoliologo-button-camisa {
+    width: 160px;
+  }
+  .portifolio-container .field-images-content {
+    width: 420px;
+  }
+  .portifolio-container .field-images-content img {
+    width: 200px;
+    margin-bottom: 17px;
+  }
+  .field-see-more-portifolio {
+    margin: 20px auto 40px auto;
+  }
 }
 
 @media (max-width: 440px) {
@@ -491,6 +954,35 @@ body {
   .home-container .field-home-buttons a {
     width: 280px;
   }
+  .portifolio-container .field-portifolio-card {
+    margin: 16px auto 50px auto;
+  }
+  .portifolio-container .field-portifolio-card .title-portifolio {
+    font-size: 36px;
+  }
+  .portifolio-container .field-portifolio-select {
+    width: 340px;
+    margin-top: 28px;
+  }
+  .portifolio-container .portifoliocamisa-button-logo {
+    width: 150px;
+  }
+  .portifolio-container .portifoliocamisa-button-camisa {
+    width: 150px;
+  }
+  .portifolio-container .portifoliologo-button-logo {
+    width: 150px;
+  }
+  .portifolio-container .portifoliologo-button-camisa {
+    width: 150px;
+  }
+  .portifolio-container .field-images-content {
+    width: 360px;
+  }
+  .portifolio-container .field-images-content img {
+    width: 170px;
+    margin-bottom: 17px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -505,11 +997,40 @@ body {
     width: 300px;
   }
   .home-container .field-central-home-image img {
-    width: 300px;
-    height: 97.34px;
+    width: 290px;
+    height: 94.1px;
   }
   .home-container .field-home-buttons a {
     width: 260px;
+  }
+  .portifolio-container .field-portifolio-card {
+    margin: 16px auto 50px auto;
+  }
+  .portifolio-container .field-portifolio-card .title-portifolio {
+    font-size: 34px;
+  }
+  .portifolio-container .field-portifolio-select {
+    width: 260px;
+    margin-top: 28px;
+  }
+  .portifolio-container .portifoliocamisa-button-logo {
+    width: 120px;
+  }
+  .portifolio-container .portifoliocamisa-button-camisa {
+    width: 120px;
+  }
+  .portifolio-container .portifoliologo-button-logo {
+    width: 120px;
+  }
+  .portifolio-container .portifoliologo-button-camisa {
+    width: 120px;
+  }
+  .portifolio-container .field-images-content {
+    width: 280px;
+  }
+  .portifolio-container .field-images-content img {
+    width: 130px;
+    margin-bottom: 17px;
   }
 }
 
@@ -536,5 +1057,37 @@ body {
   }
   .home-container .field-home-buttons a {
     width: 240px;
+  }
+  .portifolio-container .field-images-content {
+    width: 270px;
+  }
+  .portifolio-container .field-images-content img {
+    width: 130px;
+    margin-bottom: 17px;
+  }
+  .logo-page-container .logo-page-field-content {
+    padding-bottom: 50px;
+  }
+  .logo-page-container .logo-page-field-image {
+    width: 260px;
+  
+    margin: 0 auto;
+  }
+  .logo-page-container .logo-page-field-image img {
+    width: 260px;
+
+    margin: 30px 0 0 0;
+  }
+  .logo-page-field-buttons {
+    width: 240px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 20px auto 0 auto;
+  }
+  .logo-page-field-buttons .logo-page-button-back {
+    margin-bottom: 10px;
   }
 }

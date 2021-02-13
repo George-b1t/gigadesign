@@ -13,7 +13,7 @@ export default function HomeContainer() {
           </div>
         </div>
         <div className='field-home-buttons'>
-          <Link to='/portifolio' 
+          <Link to='/portifoliologo' 
            className='button-portifolio'>
             Conheça o meu trabalho
           </Link>
